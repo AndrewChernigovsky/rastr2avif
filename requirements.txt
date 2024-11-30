@@ -1,0 +1,3 @@
+Pillow
+imageio
+pillow-avif-plugin
