@@ -7,6 +7,7 @@ def convert_image(input_path, index, output_directory):
     index = index + 1
     with Image.open(input_path) as img:
         base_name = "filter-main"
+        # base_name = os.path.splitext(os.path.basename(input_path))[0]
 
         webp_path = os.path.join(output_directory, f"{base_name}{index}@200x200.webp")
         img.save(webp_path, "WEBP")
